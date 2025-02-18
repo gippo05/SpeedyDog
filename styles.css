@@ -1,110 +1,84 @@
-*
-{
+*{
+    box-sizing: border-box;
+}
+body{
     margin: 0;
     padding: 0;
 }
-body
-{
-    min-height: 100vh;
-}
-.logopic
-{
-    height: 70px;
-    width: 70px;
-}
-.Main
-{
-    background-image: url(Ferry.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-}
-nav
-{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul
-{
-    width: 100%;
-    list-style: none;
+.navbar{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    background-color: #333;
+    color: white;
 }
-nav li 
-{
-    height: 50px;
-    padding: 10px;
-}
-nav a
-{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-}
-.Button
-{
-    border: 2px solid black;
-    border-radius: 50px;
-}
-.Button:hover
-{
-    background-color: orange;
-}
-nav li:first-child
-{
-    margin-right: auto;
-}
-.sidebar
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    backdrop-filter: blur(10px);
-}
-.sidebar a:hover
-{
-    background-color: #f0f0f0;
-}
-.sidebar li
-{
-    width: 100%;
-}
-.sidebar a
-{
-    width: 100%;
-}
-.menu-button
-{
-    display: none;
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-@media(max-width: 767px){
-    .hideOnMobile
-    {
-        display: none;
-    }
-    .menu-button
-    {
-        display: block;
-    }
+.navbar-links ul{
+    margin: 0;
+    padding: 0 ;
+    display: flex;
+
 }
-@media(max-width: 400px){
-    .sidebar{
+.navbar-links li{
+    list-style: none;
+
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button{
+ position: absolute;
+ top: .75rem;
+ right: 1rem;
+ display: none;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 30px;
+ height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
         width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
     }
 }
