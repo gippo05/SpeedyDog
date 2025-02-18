@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedyDog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- NavBar -->
+     <section class="top">
+        <div class="navBarDiv">
+            <!-- <div class="sDogLogo" id="logo">
+                <img src="./ferry-svgrepo-com.svg" alt="logopic" class="logopic">
+            </div> -->
+                <div class="navBarItems" id="items">
+                    <nav class="navBar">
+                        <ul class="sidebar">
+                            <li onclick="hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" 
+                                fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                            <li><a href="#">SpeedyDog</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            
+                          </ul>
+                        <ul>
+                          <li><a href="#">SpeedyDog</a></li>
+                          <li class="hideOnMobile"><a href="#" class="Button">Login</a></li>
+                          <li class="hideOnMobile"><a href="#" class="Button">Register</a></li>
+                          <li class="menu-button" onclick="showSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+     </section>
+     <section></section>
+     <hr>
+
+    <!-- 1st part of Page (Ferry Background with texts) -->
+     <div class="Main">
+        <p class="paragraph1">Travel to any corner of the Philippines, without going around in circles</p>
+        <h1 class="text1">You dream it, we take you there</h1>
+     </div>
+
+    <!-- 2nd part of Page (Booking part with dates and buttons) -->
+     <div class="booking">
+        <div class="radioButtons">
+            <input type="radio"> One-way Trip
+            <input type="radio"> Round Trip
+        </div>
+        <div class="dropDownMenu1">
+
+            <!-- 1st Dropdown menu for starting place -->
+            <select name="startingPlaces" id="place" class="dropDown">
+                <option value="choose">Choose</option>
+                <option value="banagoPort"> Banago Port</option>
+                <option value="batangasPort">Batangas Port</option>
+                <option value="caticlanPort">Caticlan Port</option>
+                <option value="cebuPort">Cebu Port</option>
+                <option value="dapdapPort">Dapdap port</option>
+            </select>
+
+            <!-- 2nd Dropdown Menu for Destination -->
+            <select name="destinationPlace" id="place2" class="dropDown">
+                <option value="choose">Choose</option>
+                <option value="banagoPort"> Banago Port</option>
+                <option value="batangasPort">Batangas Port</option>
+                <option value="caticlanPort">Caticlan Port</option>
+                <option value="cebuPort">Cebu Port</option>
+                <option value="dapdapPort">Dapdap port</option>
+            </select>
+            
+            <!-- Dates for departure and return -->
+            <input type="date">
+            <input type="date">
+
+            <!-- Search Button -->
+            <button type="submit" class="searchButton">Search</button>
+        </div>
+     </div>
+     
+
+    <!-- 3rd part of Page (Reminders and optimizations) -->
+
+    <div class="carousel">
+        <div class="container1">
+            <div class="container2">
+                <div class="remindersText">
+                    <h2 class="reminderMessage">
+                        Reminders for Online Booking passengers
+                    </h2>
+                    <p class="paragraph1">For a very convenient experience for online booking passengers, 
+                        remember to follow these guidelines.</p>
+
+                        <ol class="orderedList">
+                            <li class="1stItem">Please be at the port at least 2 hours prior the time of departure and proceed to the vessel boarding area.</li>
+                            <li class="2ndItem">Prepare the printed e-ticket for check-in.</li>
+                            <li class="3rdItem">Strictly follow the day and time of departure from the e-ticket.</li>
+                            <li class="4thItem">Notice of admin fee and rolling cargo fee is non-refundable.</li>
+                        </ol>
+
+                        <p class="paragraph2">Have a very safe, very fast, and very convenient trip!</p>
+                </div>
+                <div class="captainDog">
+                    <!-- CaptDog SVG -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Guide and optimize experience part -->
+    <div class="containerOptimize">
+        <div class="privateGuide">
+            <!-- Booklet SVG -->
+            <img src="" alt="Guide">
+            <h4 class="visit">Planning a visit?</h4>
+            <p class="planning">Planning a visit? Here's everything you need to know about our <a class="highlightedText">destinations.</a></p>
+        </div>
+        <div class="optimizeExp">
+            <!-- WiFi SVG -->
+             <img src="" alt="wifi">
+             <h4 class="experience">Optimize your experience</h4>
+             <p class="wifiMsg">To ensure you have the smoothest and most enjoyable browsing experience, we recommend using an internet connection with a minimum speed of 10 Mbps.</p>
+        </div>
+    </div>
+    
+    
+
+    <!-- 4th part of page footer -->
+     <div class="footerBackground">
+        <div class="footerDiv">
+            <div class="footerContainer">
+                <div class="footer1">
+                    <h2 class="in-house">SpeedyDog In-house Ticketing and Booking System</h2>
+                    <p class="fpara1">SpeedyDog connects the Philippine Islands via ferry safe, ferry fast, ferry convenient ships. 
+                        SpeedyDog is a dynamic company guided by its Core Values: Focused, Accountable, Safety Conscious, 
+                        Team Player, Committed, Attentive to Customers need, Trendsetter.</p>
+                </div>
+                <div class="footer2">
+                    <h2 class="information">Information</h2>
+                    <a href="">Customer Feedback</a>
+                    <a href="">Complaint/Commendation</a>
+                    <a href="">Terms & Conditions</a>
+                </div>
+                <div class="footer3">
+                    <h2>Have a question about your booking?</h2>
+                    <img src="" alt="location" class="icon">
+                    <p>Carmona, Cavite</p>
+                    <img src="" alt="location" class="icon">
+                    <p>(632) 9898 7276 / 0999 999 9999</p>
+                    <img src="" alt="location" class="icon">
+                    <p>customercare@speedydog.com</p>
+                    <img src="" alt="location" class="icon">
+                    <p>speedydoginquiry@speedydog.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
