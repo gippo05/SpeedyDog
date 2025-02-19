@@ -4,6 +4,10 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 .navbar{
     display: flex;
@@ -11,6 +15,10 @@ body{
     align-items: center;
     background-color: #333;
     color: white;
+    position: sticky;
+    top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .brand-title{
     font-size: 1.5rem;
@@ -56,6 +64,7 @@ body{
     border-radius: 10px;
 }
 
+/* MediaQuery NavBar */
 @media(max-width: 600px){
     .toggle-button{
         display: flex;
@@ -80,5 +89,205 @@ body{
     }
     .navbar-links.active{
         display: flex;
+    }
+}
+/* .paragraph1{
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.Main{
+    margin: 0;
+    padding: 0;
+    background-image: url(./Ferry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+}
+.bookingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking{
+    height: 200px;
+    width: 1000px;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.radio{
+    height: 20px;
+    width: 20px;
+    accent-color: green;
+    margin-left: 25px;
+}
+.please{
+    margin-left: 25px;
+}
+.dropDown{
+    height: 60px;
+    margin-left: 25px;
+    font-size: 12pt;
+    width: 170px;
+}
+.dprt{
+    margin-left: 30px;
+}
+label{
+    position: absolute;
+    margin: 5px;
+    margin-left: 30px;
+    font-size: .8rem;
+}
+.date{
+    height: 60px;
+    width: 170px;
+    margin-left: 25px;
+    font-size: 12pt;
+}
+.searchButton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin-left: 3px;
+}
+
+.carousel{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.captdog{
+    height: 300px;
+}
+.remindersText{
+    max-width: 400px;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 100px;
+    margin-bottom: 0px;
+}
+.captainDog{
+    margin: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reminderMessage{
+    font-size: 2rem;
+}
+.containerOptimize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optimizeExp{
+    max-width: 500px;
+    margin: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1.8;
+}
+.highlightedText{
+    color: orange;
+}
+.footerContainer{
+    background-image: url(./footerBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer1{
+    max-width: 400px;
+    margin: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1.8;
+}
+.inf a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.icon{
+    height: 30px;
+} */
+
+
+
+
+/* Mediaquery Smartphone */
+
+@media screen and (max-width: 767px) {
+    .captdog{
+        height: 200px;
+    }
+    .icon{
+        height: 20px;
+    }
+    .Main{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(./Ferry.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        top: 0px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-size: 1.5rem;
+        position: relative;
+    }
+    .paragraph1{
+        margin-top: 0;
+        max-width: 400px;
+        font-size: 1.8rem;
+    }
+    .booking{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text1{
+        max-width: 400px;
     }
 }
