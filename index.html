@@ -14,7 +14,11 @@
 <body>
     <!-- NavBar -->
    <nav class="navbar">
-    <div class="brand-title">Bark & Sail</div>
+    <div class="brand-title">
+        <!-- <img src="./DALL·E 2025-02-21 01.57.11 - A modern and sleek logo design that incorporates the letters 
+         'B' and 'S' for Bark & Sail. The 'B' and 'S' should be creatively intertwined, with a min.webp" alt="logo" height="80px"> -->
+         Bark & Sail
+    </div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -34,7 +38,7 @@
 
     <!-- 1st part of Page (Ferry Background with texts) -->
      <div class="Main">
-        <p class="paragraph1">Travel to any corner of the Philippines, without going around in circles</p>
+        <p class="paragraph1">Travel to any corner of the Philippines, without going around in circles.</p>
         <h1 class="text1">You dream it, we take you there</h1>
      </div>
 
@@ -42,44 +46,50 @@
        <div class="bookingContainer"> 
         <div class="booking">
             <div class="radioButtons">
-                <input type="radio" class="radio" id="Orange" value="Orange"> One-way Trip
-                <input type="radio" class="radio"> Round Trip
+                <input type="radio" class="radio" id="Orange" value="Orange"> <span>One-way Trip</span>
+                <input type="radio" class="radio"> <span>Round Trip</span> 
             </div>
-            <p class="please">Please Choose your destination</p>
-            <div class="dropDownMenu1">
 
+            <p class="please">Please Choose your destination</p>
+
+            <div class="dropDownMenu1">
                 <!-- 1st Dropdown menu for starting place -->
-                <label for="From">From</label>
                 <select name="startingPlaces" id="place" class="dropDown down">
-                    <option value="choose">Choose</option>
+                    <option value="" disabled selected>Choose</option>
                     <option value="banagoPort"> Banago Port</option>
                     <option value="batangasPort">Batangas Port</option>
                     <option value="caticlanPort">Caticlan Port</option>
                     <option value="cebuPort">Cebu Port</option>
                     <option value="dapdapPort">Dapdap port</option>
                 </select>
+                <label for="dropdown" class="top-label">From</label>
+            </div>
 
                 <!-- 2nd Dropdown Menu for Destination -->
-                 <label for="to">To</label>
-                <select name="destinationPlace" id="place2" class="dropDown">
-                    
-                    <option value="choose">Choose</option>
-                    <option value="banagoPort"> Banago Port</option>
-                    <option value="batangasPort">Batangas Port</option>
-                    <option value="caticlanPort">Caticlan Port</option>
-                    <option value="cebuPort">Cebu Port</option>
-                    <option value="dapdapPort">Dapdap port</option>
-                </select>
-                
-                <!-- Dates for departure and return -->
-                 <label for="Departure" class="dprt">Departure</label>
-                <input type="date" class="date">
-                <label for="Return" class="dprt">Return</label>
-                <input type="date" class="date">
+                <div class="dropDownMenu1 ddm2">
+                    <select name="destinationPlace" id="place2" class="dropDown">
+                        <option value="">Choose</option>
+                        <option value="banagoPort"> Banago Port</option>
+                        <option value="batangasPort">Batangas Port</option>
+                        <option value="caticlanPort">Caticlan Port</option>
+                        <option value="cebuPort">Cebu Port</option>
+                        <option value="dapdapPort">Dapdap port</option>
+                    </select>
+                    <label for="Dropdown" class="top-label">To</label>
+                </div> 
 
+                <!-- Dates for departure and return -->
+                 <div class="calendar-container">
+                    <input type="date" class="calendar">
+                    <label for="Departure" class="dprt">Departure</label>
+                    
+                </div>
+                <div class="calendar-container cc2">
+                    <input type="date" class="calendar">
+                    <label for="Return" class="dprt">Return</label>
+                </div>
                 <!-- Search Button -->
                 <a href="#" class="searchButton">Search</a>
-            </div>
         </div>
      </div>
 
