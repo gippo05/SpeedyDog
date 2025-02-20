@@ -165,7 +165,11 @@ body{
 .dprt{
     position: absolute;
     right: 110px;
+    top: 5px;
     font-size: .8rem;
+}
+.rr{
+    right: 130px;
 }
 .calendar-container{
     position: relative;
