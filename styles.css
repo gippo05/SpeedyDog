@@ -10,7 +10,7 @@ body{
     font-style: normal;
     color: rgb(99, 94, 94);
 }
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,24 +20,25 @@ body{
     top: 0;
     padding-left: 100px;
     padding-right: 100px;
-    height: 60px;
 }
-.brand-title{
+
+.brand-title {
     font-size: 1.5rem;
     margin: 1rem;
 }
 
-.navbar-links ul{
+.navbar-links ul {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     display: flex;
-
+    background-color: white;
 }
-.navbar-links li{
+
+.navbar-links li {
     list-style: none;
-
 }
-.navbar-links li a{
+
+.navbar-links li a {
     text-decoration: none;
     color: #333;
     padding: 1rem;
@@ -45,21 +46,21 @@ body{
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #444;
 }
 
-.toggle-button{
- position: absolute;
- top: .75rem;
- right: 1rem;
- display: none;
- flex-direction: column;
- justify-content: space-between;
- width: 30px;
- height: 21px;
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-.toggle-button .bar{
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: #333;
@@ -67,30 +68,41 @@ body{
 }
 
 /* MediaQuery NavBar */
-@media(max-width: 600px){
-    .toggle-button{
+@media(max-width: 600px) {
+    .toggle-button {
         display: flex;
     }
+
     .navbar-links {
         display: none;
         width: 100%;
+        transition: all 0.3s ease-in-out;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-    .navbar-links ul{
+
+    .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
-    .navbar-links li{
+
+    .navbar-links li {
         text-align: center;
     }
-    .navbar-links a{
+
+    .navbar-links a {
         padding: .5rem 1rem;
     }
-    .navbar-links.active{
+
+    .navbar-links.active {
         display: flex;
+    }
+
+    .brand-title {
+        margin-top: 25px;
     }
 }
 
@@ -283,6 +295,10 @@ body{
 .icon{
     height: 30px;
 }
+.copyright{
+    position: absolute;
+    top: 157rem;
+}
 
 }
 
@@ -469,5 +485,42 @@ body{
     .paragraph2{
         max-width: 300px;
         padding-left: 60px;
+    }
+    .highlightedText{
+        color: orange;
+    }
+    .footerContainer{
+        background-image: url(./footerBG.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .inf{
+        width: 400px;
+        padding-left: 49px;
+    }
+    .footer1{
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+        line-height: 1.8;
+    }
+    .inf a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .icon{
+        height: 30px;
+    }
+    .copyright{
+        max-width: 300px;
     }
 }
