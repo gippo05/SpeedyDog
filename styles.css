@@ -399,17 +399,17 @@ body{
         border-radius: 10px;
     }
     .calendar-container{
-        display: flex;
+        display: inline-block;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        max-width: 90%;
         margin: 8px;
         margin-left: 20px;
         position: relative;
     }
     .calendar{
         height: 60px;
-        width: 90%;
+        width: 100%;
         font-size: 12pt;
         border-radius: 10px;
     }
@@ -423,7 +423,7 @@ body{
             transition: all 0.2s;
     }
     .searchButton{
-        margin: 40px;
+        margin: auto;
         padding-top: 20px;
         padding-bottom: 20px;
         border: 1px solid orange;
@@ -444,6 +444,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
     .container1{
         display: flex;
@@ -478,6 +479,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: auto;
     }
     .optimizeExp{
         max-width: 500px;
