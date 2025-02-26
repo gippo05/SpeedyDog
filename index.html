@@ -43,8 +43,12 @@
        <div class="bookingContainer"> 
         <div class="booking">
             <div class="radioButtons">
-                <input type="radio" class="radio1" id="Orange" value="Orange"> <span class="rdtxt">One-way Trip</span>
-                <input type="radio" class="radio2"> <span class="rdtxt">Round Trip</span> 
+                <form>
+                <input type="radio" id="one-way" value="one-way" name="choice">
+                <label for="one-way">One-way trip</label>
+                <input type="radio" id="roundtrip" value="roundtrip" name="choice">
+                <label for="roundtrip">Round Trip</label>
+                </form>
             </div>
 
             <p class="please">Please Choose your destination</p>

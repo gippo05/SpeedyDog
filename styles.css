@@ -10,6 +10,9 @@ body{
     font-style: normal;
     color: rgb(99, 94, 94);
 }
+.Main{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(50, 19, 93, 0.73)), url(./Ferry.jpg);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,6 +23,7 @@ body{
     top: 0;
     padding-left: 100px;
     padding-right: 100px;
+    z-index: 100;
 }
 
 .brand-title {
@@ -118,7 +122,6 @@ body{
 .Main{
     margin: 0;
     padding: 0;
-    background-image: url(./Ferry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
@@ -319,7 +322,6 @@ body{
     .Main{
         margin: 0px;
         padding: 0px;
-        background-image: url(./Ferry.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -451,10 +453,11 @@ body{
         max-width: 300px;
     }
     .remindersText{
-        width: 400px;
+        width: 350px;
         line-height: 1.2;
         font-size: 1rem;
         margin-bottom: 0px;
+        display: inline-block;
     }
     .captainDog{
         margin: 100px;
@@ -501,7 +504,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-bottom: 0px;
     }
     .inf{
         width: 400px;
@@ -540,7 +543,6 @@ body{
     .Main{
         margin: 0px;
         padding: 0px;
-        background-image: url(./Ferry.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
