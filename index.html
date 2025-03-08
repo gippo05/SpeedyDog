@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- NavBar -->
-   <nav class="navbar">
+   <nav class="navbar" id="navBar">
     <div class="brand-title">
         Bark & Sail
     </div>
@@ -35,12 +35,12 @@
 
     <!-- 1st part of Page (Ferry Background with texts) -->
      <div class="Main">
-        <p class="paragraph1">Travel to any corner of the Philippines, without going around in circles.</p>
-        <h1 class="text1">You dream it, we take you there</h1>
+        <p class="paragraph1 fadeUp">Travel to any corner of the Philippines, without going around in circles.</p>
+        <h1 class="text1 fadeUp">You dream it, we take you there</h1>
      </div>
 
     <!-- 2nd part of Page (Booking part with dates and buttons) -->
-       <div class="bookingContainer"> 
+       <div class="bookingContainer fadeUp"> 
         <div class="booking">
             <div class="radioButtons">
                 <form>
@@ -98,7 +98,7 @@
 
     <div class="carousel">
         <div class="container1">
-            <div class="remindersText" id="guide">
+            <div class="remindersText">
                     <h2 class="reminderMessage">
                         Reminders for Online Booking passengers
                     </h2>
@@ -123,8 +123,9 @@
     </div>
     
     <!-- Guide and optimize experience part -->
-    <div class="containerOptimize" id="guide">
-        <div class="optimizeExp" id="guide">
+ <div class="outerLayer">
+    <div class="containerOptimize" id="fading">
+        <div class="optimizeExp">
             <!-- Booklet SVG -->
             <img src="./Assets/map_brochure_icon.svg" height="80px" alt="guide">
             <h4 class="visit">Private Guide</h4>
@@ -136,6 +137,7 @@
              <h4 class="experience">Optimize your experience</h4>
              <p class="wifiMsg">To ensure you have the smoothest and most enjoyable browsing experience, we recommend using an internet connection with a minimum speed of 10 Mbps.</p>
         </div>
+    </div>
     </div>
     
     
@@ -166,7 +168,7 @@
                     <p>speedydoginquiry@barknsail.com</p>
                 </div>
                     <div class="copyright">
-                        <p>Copyright <span id="year"></span>. Made by Gian Sarinas. Design inspired by FastCat Booking by APFC. All Rights Reserved. </p>
+                        <p>Copyright <span id="year"></span>. Made by Gian Sarinas. Design inspired by <span><a href="https://fastcat-book.com/" class="FastCat">FastCat Booking by APFC</a></span>. All Rights Reserved. </p>
                     </div>
             </div>
     

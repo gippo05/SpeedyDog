@@ -114,8 +114,8 @@ body{
         margin-top: 25px;
     }
 }
-.scrolled{
-    animation: slideInFromBottom 1s ease-in-out;
+.fadeUp{
+    animation: slideInFromBottom 0.4s ease-in-out;
 }
 @keyframes slideInFromBottom {
     0% {
@@ -142,7 +142,7 @@ body{
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -291,13 +291,14 @@ body{
     color: orange;
 }
 .footerContainer{
+    padding-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 110vh;
     width: 100%;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .footer1{
@@ -318,7 +319,7 @@ body{
 }
 .copyright{
     position: absolute;
-    top: 160rem;
+    top: 150rem;
 }
 
 }
@@ -765,4 +766,8 @@ body{
     .copyright{
         max-width: 300px;
     }
+}
+.FastCat{
+    list-style: none;
+    color: orange;
 }

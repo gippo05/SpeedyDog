@@ -10,12 +10,12 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 
 window.onscroll = function(){
     const scrollPosition = window.scrollY;
-    const element = document.getElementById("guide");
+    const element = document.getElementById("fading");
 
     if (scrollPosition > 50){
-        element.classList.add("scrolled");
+        element.classList.add("fadeUp");
     }
     else{
-        element.classList.remove("scrolled");
+        element.classList.remove("fadeUp");
     }
 }
